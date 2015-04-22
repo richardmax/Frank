@@ -1,5 +1,6 @@
 <?php
 require_once 'admin/frank-theme-options.php';
+require_once '_mashboard/functions.php';
 
 add_action( 'after_setup_theme', 'frank_theme_setup' );
 
@@ -429,9 +430,46 @@ if ( ! function_exists( 'frank_enqueue_styles' ) ) {
 
 		wp_register_style( 'frank_stylesheet', get_stylesheet_directory_uri().'/style.css', null, '0.9', 'all' );
 		wp_register_style( 'frank_stylesheet_ie', get_stylesheet_directory_uri().'/ie.css', null, '0.9', 'all' );
+		
 		$wp_styles->add_data( 'frank_stylesheet_ie', 'conditional', 'IE' );
 		wp_enqueue_style( 'frank_stylesheet' );
 		wp_enqueue_style( 'frank_stylesheet_ie' );
+		
+		
+		
+		/* add mashboard dependancies ------------------------------ */
+		
+		
+		
+		wp_register_style( 'normalize_stylesheet', get_stylesheet_directory_uri().'/_mashboard/css/normalize.css', null, '0.1', 'all' );
+		wp_register_style( 'main_stylesheet', get_stylesheet_directory_uri().'/_mashboard/css/main.css', null, '0.1', 'all' );
+		wp_register_style( 'max_stylesheet', get_stylesheet_directory_uri().'/_mashboard/css/max.css', null, '0.1', 'all' );
+		wp_register_style( 'item_stylesheet', get_stylesheet_directory_uri().'/_mashboard/css/item.css', null, '0.1', 'all' );
+		wp_register_style( 'nexuscomponent_stylesheet', get_stylesheet_directory_uri().'/_mashboard/nexus/component.css', null, '0.1', 'all' );
+		wp_register_style( 'nexusdemo_stylesheet', get_stylesheet_directory_uri().'/_mashboard/nexus/demo.css', null, '0.1', 'all' );
+		wp_register_style( 'nexus_stylesheet', get_stylesheet_directory_uri().'/_mashboard/nexus/nexus.css', null, '0.1', 'all' );
+		
+		
+		
+		
+		wp_register_style( 'mashboard_stylesheet', get_stylesheet_directory_uri().'/_mashboard/mashboard.css', null, '0.1', 'all' );
+		
+		
+		
+		wp_enqueue_style( 'normalize_stylesheet' );
+		wp_enqueue_style( 'main_stylesheet' );
+		wp_enqueue_style( 'max_stylesheet' );
+		wp_enqueue_style( 'item_stylesheet' );
+		wp_enqueue_style( 'nexuscomponent_stylesheet' );
+		wp_enqueue_style( 'nexusdemo_stylesheet' );
+		wp_enqueue_style( 'nexus_stylesheet' );
+		wp_enqueue_style( 'mashboard_stylesheet' );
+		
+		
+		
+		
+		
+		
 	}
 }
 

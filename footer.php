@@ -4,17 +4,24 @@
  */
 ?>
 </div>
-<?php if ( is_active_sidebar( 'widget-footer' ) ) : ?>
-<div id="page-bottom">
-	<footer id="page-footer" class="container" role="contentinfo">
-		<div class="row">
-		<?php if ( ! dynamic_sidebar( 'Footer' ) ) : ?>
+<!-- /container --> 
 
-		<?php endif; ?>
-		</div>
-	</footer>
-</div>
-<?php endif; ?>
+
+
 <?php wp_footer(); ?>
+ 
+
+
+
+<script>
+      new gnMenu( document.getElementById( 'gn-menu' ) );
+
+
+    </script>
+    
+    <!-- todo - remove sidebars, options, header image and widgets re footer etc -->
+
+    
 </body>
 </html>
+

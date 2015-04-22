@@ -1,40 +1,3 @@
-<?php
-/**
- * @package Frank
- */
-?>
-<!DOCTYPE html>
-<!--[if IE 7 | IE 8]>
-<html class="ie" lang="en-US">
-<![endif]-->
-<!--[if (gte IE 9) | !(IE)]><!-->
-<html <?php language_attributes(); ?>>
-<!--<![endif]-->
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-
-	<title>
-		<?php
-		wp_title( '&mdash;', true, 'right' );
-		bloginfo( 'name' );
-		?>
-	</title>
-
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-	<?php wp_head(); ?>
-</head>
-<body id="page" <?php body_class(); ?>>
-	<!--[if lt IE 9]>
-		<div class="chromeframe">Your browser is out of date. Please <a href="http://browsehappy.com/">upgrade your browser </a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>.</div>
-	<![endif]-->
-    
-    
-    
-
 <div class="container nexus">
   <ul id="gn-menu" class="gn-menu-main">
     <li class="gn-trigger"> <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
@@ -53,34 +16,7 @@
         <!-- /gn-scroller --> 
       </nav>
     </li>
-    <li class='rm-logo'><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></li>
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- h2 id="site-description"><?php //bloginfo( 'description' ); ?></h2 -->
-    
-    
-    
-  
-        
-        
-        
-        <?php wp_nav_menu( array( 'theme_location' => 'frank_primary_navigation', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
+    <li class='rm-logo'><a href="http://ricmax.com">Richard Max</a></li>
     <div class="pull-right author-main"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="author-button" data-toggle="dropdown">
       <h2><!--i class="glyphicon glyphicon-cog"></i -->Return to
         <?php bloginfo( 'name' ); ?>
@@ -113,19 +49,61 @@
       
     </li>
   </ul>
+  <section class="grid3d vertical" id="grid3d">
+    <div class="grid-wrap">
+      <div id="container" class="grid">
+      
+      
+      
+      
+      
+      
+      ..................
+      
+      
+      
+      
+      
+      
+      
+      
+
+
+<script type="text/javascript" src="<?php echo $plugin_url  ?>/js/jquery.min.js"></script> 
+<script type="text/javascript" src="<?php echo $plugin_url  ?>/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="<?php echo $plugin_url  ?>/js/bootstrap-switch.min.js"></script> 
+<script src="<?php echo $plugin_url  ?>/js/classie.js"></script> 
+<script src="<?php echo $plugin_url  ?>/js/helper.js"></script> 
+<script src="<?php echo $plugin_url  ?>/js/grid3d.js"></script> 
+<script src="<?php echo $plugin_url  ?>/js/isotope.pkgd.js"></script> 
+<script src="<?php echo $plugin_url  ?>/js/packery-mode.pkgd.min.js"></script> 
+<script src="<?php echo $plugin_url  ?>/js/init.js"></script> 
+<!-- script src="<?php echo $plugin_url  ?>/swiper/idangerous.swiper.min.js"></script --> 
+<!-- script src="<?php echo $plugin_url  ?>/swiper/idangerous.swiper.scrollbar-2.1.js"></script -->
+
+</div>
+</div>
+<script src="<?php echo $plugin_url  ?>/nexus/gnmenu.js"></script> 
+<script>
+      new gnMenu( document.getElementById( 'gn-menu' ) );
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    
-    
+  /*   
+  var swiperParent = new Swiper('.swiper-parent',{
+    pagination: '.pagination-parent',
+    paginationClickable: true,
+    loop: true,
+    slidesPerView: 3
+  })
+  var swiperNested1 = new Swiper('.swiper-nested',{
+    mode: 'vertical',
+    pagination: '.pagination-nested',
+    paginationClickable: true,
+    slidesPerView: 2
+  })
+  
+  */
+ 
+    </script>
+</body></html>
