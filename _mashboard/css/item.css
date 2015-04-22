@@ -216,7 +216,7 @@ font-size: 11px !important;
 
 
 
-.grid .youtube {margin-bottom:-30px !important;}
+.grid .youtube {}
 
 /* oembeds ------------- */
 .grid .oembed._youtube {width: 360px !important; height:360px !important;}

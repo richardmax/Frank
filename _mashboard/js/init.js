@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	
-	alert('i am ready');
+	//alert('i am ready');
 	
 	var $container = $('#container');
 				  
@@ -93,6 +93,7 @@ jQuery(document).ready(function($) {
     $checkboxes.each( function( i, elem ) {
       // if checkbox, use value if checked
       if ( elem.checked ) {
+		 
         inclusives.push( elem.value );
       }
     });
@@ -133,6 +134,7 @@ jQuery(document).ready(function($) {
     $checkboxesA.each( function( i, elem ) {
       // if checkbox, use value if checked
       if ( elem.checked ) {
+		   //alert('clicked');
         inclusives.push( elem.value );
       }
     });

@@ -313,7 +313,7 @@ border-right: 1px solid #c6d0da;
 }
 
 .gn-menu-wrapper.gn-open-all {
-		width: 360px
+	width: 360px;
 		
 }
 
@@ -326,7 +326,7 @@ border-right: 1px solid #c6d0da;
 			-webkit-transform: translateX(0px);
 			-moz-transform: translateX(0px);
 			transform: translateX(0px);
-			width: 100%;
+			width: 171px;
 	}
 
 	.gn-menu-wrapper.gn-open-all .gn-scroller {

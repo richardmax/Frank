@@ -1,5 +1,43 @@
 /* CSS Document */
 
+/* bootstrap legacy start !!!! */
+.pull-right{float:right;}
+
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group > .btn:first-child {
+  margin-left: 0;
+}
+.btn-group > .btn:hover, .btn-group-vertical > .btn:hover, .btn-group > .btn:focus, .btn-group-vertical > .btn:focus, .btn-group > .btn:active, .btn-group-vertical > .btn:active, .btn-group > .btn.active, .btn-group-vertical > .btn.active {
+  z-index: 2;
+}
+
+.btn-group > .btn, .btn-group-vertical > .btn {
+  position: relative;
+  float: left;
+}
+
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0;
+}
+.btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn, .btn-group .btn-group + .btn-group {
+  margin-left: -1px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* bootstrap legacy end !!!! */
+
 
 .nexus{ overflow:visible}
 
@@ -72,7 +110,7 @@ height: 119px;
 padding: 10px;
 }
 
-.gn-open-part #form-uiA{ visibility:hidden; height: 1px;}
+.gn-open-part #form-uiA{ /*visibility:hidden; height: 1px;*/}
 .gn-open #form-uiA{ visibility: visible; height: 119px;}
 
 #form-uiA .switch{margin-top:-15px;}
@@ -87,7 +125,9 @@ height: 60px;
 
 
 .nexus-shadow{
-visibility: visible; height: 38px; margin-top: -7px;
+	
+  position: absolute;
+  margin-top: 30px;
 }
 
 .nexus  .switch {
@@ -620,8 +660,8 @@ padding-top: 20px;
 
 
 .rm-logo{ background-image: url(../images/richard_max.png); width:300px; overflow: visible; 
-left: 60px;
-position: absolute; z-index:999;}
+
+position: relative; z-index:999;}
 .rm-logo a{ display:none;}
 
 
@@ -677,9 +717,10 @@ body.id-ui {background:#000;}
 	display:none !important;
 }
 
-.rm-logo, .author-main{display:none !important;}
+.rm-logo{display:none !important;}
+ .author-main{/*display:none !important;*/}
 
 #form-ui{
-	/*visibility:hidden;*/
+	visibility:hidden;
 }
 }
