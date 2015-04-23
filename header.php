@@ -36,6 +36,17 @@
     
 
 <div class="container nexus">
+
+
+
+
+
+
+
+
+
+
+
   <ul id="gn-menu" class="gn-menu-main">
     <li class="gn-trigger"> <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
       <nav class="gn-menu-wrapper">
@@ -79,37 +90,11 @@
   
   
   
+        <?php include '_mashboard/sidemenu.php'; ?>
   
   
   
   
-  
-        <div class="gn-scroller">
-        
-        
-        
-        
-        
-        
-        
-          <ul id="cat_filters" class="gn-menu">
-            <li><a href="http://app.dev.buzzmyvideos.com/chatroom/" class='gn-icon gn-icon-videos'>ChatRoom</a></li>
-            <li><a href="#" class='gn-icon gn-icon-archive' data-filter="*">Everything</a></li>
-            <li><a href="#" class='gn-icon gn-icon-article' data-filter=".category-highlights">Highlights</a></li>
-            <li><a href="#" class='gn-icon gn-icon-videos' data-filter=".category-uncatogorised">Posts</a></li>
-            <li><a href="#" class='gn-icon gn-icon-videos' data-filter=".category-youtube">You Tube</a></li>
-            <li><a href="#" class='gn-icon gn-icon-videos' data-filter=".category-twitter">Twitter</a></li>
-            <li><a href="#" class='gn-icon gn-icon-pictures' data-filter=".category-instagram">Instagram</a></li>
-            <li><a href="http://app.dev.buzzmyvideos.com/chatroom/" class='gn-icon gn-icon-videos'>ChatRoom</a></li>
-            <li><a href="#" class='gn-icon gn-icon-archive' data-filter="*">Everything</a></li>
-            <li><a href="#" class='gn-icon gn-icon-article' data-filter=".category-highlights">Highlights</a></li>
-            <li><a href="#" class='gn-icon gn-icon-videos' data-filter=".category-uncatogorised">Posts</a></li>
-            <li><a href="#" class='gn-icon gn-icon-videos' data-filter=".category-youtube">You Tube</a></li>
-            <li><a href="#" class='gn-icon gn-icon-videos' data-filter=".category-twitter">Twitter</a></li>
-            <li><a href="#" class='gn-icon gn-icon-pictures' data-filter=".category-instagram">Instagram</a></li>
-          </ul>
-        </div>
-        <!-- /gn-scroller --> 
       </nav>
     </li>
     <li class='rm-logo'><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></li>
@@ -128,11 +113,7 @@
   
         
         
-        
-        <?php wp_nav_menu( array( 'theme_location' => 'frank_primary_navigation', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
-        
-        
-        
+   
         
         
         
@@ -145,6 +126,14 @@
         <?php bloginfo( 'name' ); ?>
       </h2>
       </a> </div>
+      
+      
+      
+      
+        <?php wp_nav_menu( array( 'theme_location' => 'frank_primary_navigation', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
+        
+        
+        
     <li id="form-ui" class="top-nav-ui">
       <div class="btn-group item-sizes-toggle" data-toggle="buttons-radio" data-toggle-name="itemSize">
         <button class="btn thumbnail-button active" value="default"><i class="icon-ellipsis-horizontal icon-2x"></i><br>

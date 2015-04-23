@@ -53,9 +53,10 @@ label {
 }
 
 .nexus .grid .item {
-
-margin: 0px;
-  border: #34495e 3px solid;
+  margin: 0px;
+  border: #34495e 2px solid;
+  border-left: 0px;
+  border-bottom: 0px;
 }
 
 .nexus .grid .item h2{
@@ -106,7 +107,7 @@ z-index: 9;
 .nexus #form-ui,
 .nexus #form-uiA {
 	margin-left: 0px;
-height: 119px;
+height: 50px;
 padding: 10px;
 }
 
@@ -131,7 +132,7 @@ height: 60px;
 }
 
 .nexus  .switch {
-width: 99px;
+width: 90px;
 height: 42px;
 }
 
@@ -564,13 +565,19 @@ h2, p{ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 
 @media (max-width: 420px){
 	.nexus {
-	  width:360px !important;
+	  width:102% !important;
+	 
 	}
+	.nexus .switch{
+	margin-left:0px;
+}
+
 }
 
 @media (max-width: 360px){
 	.nexus {
-	  width:100% !important;
+	  width:102% !important;
+	 
 	}
 
 }
@@ -582,7 +589,7 @@ h2, p{ text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 top: 64px !important;
 }
 .nexus section {
-padding-top: 66px;
+padding-top: 60px;
 }
 
 .admin-bar .ls-wp-fullwidth-container {
@@ -707,6 +714,21 @@ body.id-ui {background:#000;}
 
 /* bmv */
 
+@media (min-width: 1389px) {
+
+
+
+.gn-menu-main li.menu-item{display:block;}
+.gn-menu-main .gn-scroller li.menu-item{display:none;}
+}
+
+@media (max-width: 1390px) {
+
+
+
+.gn-menu-main li.menu-item{display:none;}
+.gn-menu-main .gn-scroller li.menu-item{display:block;}
+}
 
 @media (max-width: 1025px) {
 #form-uiA{
@@ -717,8 +739,12 @@ body.id-ui {background:#000;}
 	display:none !important;
 }
 
-.rm-logo{display:none !important;}
+.rm-logo{/*display:none !important;*/}
  .author-main{/*display:none !important;*/}
+
+
+
+
 
 #form-ui{
 	visibility:hidden;

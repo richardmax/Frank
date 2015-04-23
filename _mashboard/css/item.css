@@ -10,11 +10,13 @@
 .grid .landscape-large .caption__overlay{padding: 15px; margin-bottom:15px;}
 
 
-.grid .square-small{width:60px; height:60px;}
-.grid .square-medium{width:120px; height:120px;}
-.grid .square-large{width:240px; height:240px;}
+.grid .square-tiny{width:60px; height:60px;} /* just instagram - new */
+.grid .square-small{width:120px; height:120px;}
+.grid .square-medium{width:240px; height:240px;}
+.grid .square-large{width:300px; height:300px;}
 
-.grid .landscape-small{width:120px; height:60px;}
+.grid .landscape-small{width: 180px;
+  height: 120px;}
 .grid .landscape-medium{width:300px; height:180px;}
 .grid .landscape-large{width:480px; height:300px;}
 
@@ -28,7 +30,7 @@
 
 .grid .portrait-large{width:360px; height:540px;}
 
-.grid .text-only{width:240px; height:60px;}
+.grid .text-only{  width: 360px; height:60px;}
 .grid .text-only .caption__overlay,
 .grid .text-only .caption__overlay__title{transform: translateY(0);}
 .grid .text-only h2 {
@@ -87,9 +89,17 @@ line-height:1.3em;
 
 
 
-@media screen and (max-width: 527px) {
+@media screen and (max-width: 420px) {
+	
+	.grid .text-only{  width: 100%; height:60px;}
+	
+	.grid .landscape-small {
+  width: 50%;
+  height: 120px;
+}
 
- .grid .landscape-large{width:360px; height:200px;}
+ .grid .landscape-large{width: 100%; 
+  height: 240px;}
  .grid .square-large{width:100%; height: 360px;}
 
 }

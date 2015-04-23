@@ -52,13 +52,17 @@
 						$item_shape =  'square';
 						
 						if(!$item_rating){
-							if($no_instagram_likes >= 5){
+							if($no_instagram_likes >= 11){
 							$item_size =  'large'; 
 							}
-							else if($no_instagram_likes >= 4){
+							else if($no_instagram_likes >= 8){
 								$item_size =  'medium'; 
-							}else{
-								$item_size =  'small'; 
+							}
+							else if($no_instagram_likes >= 5){
+								$item_size =  'medium'; 
+							}
+							else{
+								$item_size =  'tiny'; 
 							}
 						}
 						
@@ -89,7 +93,7 @@
 					if($item_rating >80){
 						$item_size =  'large';
 						$imagethumb_size = 'large';
-					}else if($item_rating >50){
+					}else if($item_rating >49){
 						$item_size =  'medium';
 						$imagethumb_size = 'medium';
 					}else {
